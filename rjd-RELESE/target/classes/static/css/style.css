@@ -1,0 +1,271 @@
+.wrapper {
+  width:1000px;
+  height:560px;
+  margin:0 auto;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid darkred;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.preview {
+  text-align: center;
+  height: 75px;
+}
+
+.preview-box {
+  vertical-align: middle;
+  font-size: 35px;
+  display: inline-block;
+  margin-right: 75px;
+  font-family: MoscowSans, sans-serif;
+}
+
+.container {
+  width: 700px;
+  height: 415px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 5px;
+  border: 1px solid darkred;
+}
+
+.motion-form {
+  width: 705px;
+  height: 415px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.motion-form-add {
+  width: 345px;
+  height: 220px;
+  margin-right: 5px;
+  border-radius: 5px;
+  border: 1px solid darkred;
+}
+
+.motion-form-name {
+  width: 315px;
+  height: 15px;
+  margin-right: 5px;
+  padding: 15px;
+  border-radius: 5px;
+  border-bottom: 1px solid darkred;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+  font-family: MoscowSans, sans-serif;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: MoscowSans, sans-serif;
+  margin-left: 10px;
+}
+
+input[type=text] {
+  width: 85%;
+  padding: 14px;
+  border: 1px solid darkred;
+  border-radius: 4px;
+  outline:none;
+}
+
+button[type=submit] {
+  background-color: white;
+  color: black;
+  border: 2px solid #da2031;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-right: 10px;
+  margin-top: 16px;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: MoscowSans, sans-serif;
+}
+
+button[type=submit]:hover {
+  border: 2px solid limegreen;
+}
+
+button[type=button] {
+  background-color: white;
+  color: black;
+  border: 2px solid #da2031;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-right: 10px;
+  margin-top: 69px;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: MoscowSans, sans-serif;
+}
+
+button[type=button]:hover {
+  border: 2px solid limegreen;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tbl-header {
+  height:10px;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid darkred;
+  padding: 15px;
+}
+
+.tbl-content {
+  height:100px;
+  overflow-x:auto;
+  border-radius: 0  0 5px 5px;
+  border-bottom: 1px solid darkred;
+  border-left: 1px solid darkred;
+  border-right: 1px solid darkred;
+  padding: 15px;
+}
+
+th {
+  width: 133px;
+  height: 10px;
+  text-align: center;
+  font-size: 15px;
+  color: black;
+  border-radius: 20px;
+  vertical-align: top;
+  font-family: MoscowSans, sans-serif;
+}
+
+td {
+  width: 130px;
+  height: 50px;
+  word-break: break-all;
+  text-align: center;
+  font-size: 15px;
+  color: black;
+  border-bottom: 20px;
+  border-radius: 20px;
+  font-family: MoscowSans, sans-serif;
+}
+
+img {
+  height: 56px;
+}
+
+.author {
+  margin-top: 8px;
+  font-size: 10px;
+  text-align: center;
+  font-family: MoscowSans, sans-serif;
+}
+
+.del:before {
+  content: "\2718";
+}
+
+.del {
+  background-color: rgba(255, 255, 255, .4);
+  border: none;
+  color: black;
+  font-size: 17px;
+  cursor: pointer;
+  font-family: MoscowSans, sans-serif;
+}
+
+.del:hover {
+  color: red;
+}
+
+.edit:before {
+  content: "\270E";
+}
+
+.edit {
+  background-color: rgba(255, 255, 255, .4);
+  border: none;
+  color: black;
+  font-size: 17px;
+  cursor: pointer;
+  font-family: MoscowSans, sans-serif;
+}
+
+.edit:hover {
+  color: green;
+}
+
+.modal-form-name {
+  width: 315px;
+  height: 15px;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+  font-family: MoscowSans, sans-serif;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal .modal_content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 30px;
+  border: 2px solid darkred;
+  border-radius: 5px;
+  width: 400px;
+  height: 200px;
+  z-index: 99999;
+}
+
+.modal .modal_content .close_modal_window {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
